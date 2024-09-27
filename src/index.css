@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "DM Sans";
+    src: local("DMSans"), local("DMSans"),
+      url("./assets/DM_Sans/DMSans-Regular.ttf") format("truetype"),
+      url("./assets/DM_Sans/DMSans-Medium.ttf") format("truetype"),
+      url("./assets/DM_Sans/DMSans-Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"), local("Montserrat"),
+      url("./assets/Montserrat/Montserrat-VariableFont_wght.ttf")
+        format("truetype");
+  }
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  @apply text-gray-500;
+}
